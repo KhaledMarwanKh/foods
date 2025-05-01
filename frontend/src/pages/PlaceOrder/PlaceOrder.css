@@ -1,0 +1,93 @@
+.place-order {
+    direction: rtl;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 100px;
+  }
+  
+  .place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+  }
+  
+  .place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  
+  .place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+  }
+  
+  .place-order-left .multi-fields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+  }
+  
+  .place-order .cart-total button {
+    margin-top: 30px;
+  }
+  
+  .place-order-left select {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='14' height='10' viewBox='0 0 14 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23666' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 36px;
+    padding-left: 12px;
+    cursor: pointer;
+    direction: rtl;
+  }
+  
+  .place-order-left select option[disabled] {
+    color: #999;
+  }
+  
+  .place-order-left select option {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .place-order-left select:focus {
+    border-color: tomato;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.2);
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 992px) {
+    .place-order {
+      flex-direction: column;
+      margin: 30px;
+      gap: 30px;
+    }
+  
+    .place-order-left,
+    .place-order-right {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  direction: rtl;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #fcfcfc;
+
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: #a9a9a9;
+}
+
+.app-content{
+  display: flex;
+
+} 
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cursor{
+  cursor:pointer;
+}
+
+
+/* dark web*/
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.theme-switch .switch {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  background-color: var(--border);
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.theme-switch .switch::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--surface);
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.theme-switch input:checked + .switch {
+  background-color: var(--primary);
+}
+
+.theme-switch input:checked + .switch::before {
+  transform: translateX(24px);
+}
+
+.theme-switch input {
+  display: none;
+} 

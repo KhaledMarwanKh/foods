@@ -1,0 +1,167 @@
+ /* .add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+.add form {
+    gap: 20px;
+}
+
+.add-img-upload img {
+    width: 120px;
+    cursor: pointer;
+
+}
+
+.add-product-name,
+.add-product-description {
+    width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    padding: 10px;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+}
+
+.add-category-price select,
+.add-category-price input {
+    max-width: 120px;
+    padding: 10px;
+
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+} */
+ 
+
+
+ .add {
+    width: 70%;
+    margin: 50px auto 0 max(5vw, 25px);
+    color: #4b4b4b;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    direction: rtl;
+  }
+  
+  .add form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .add-img-upload img {
+    width: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px dashed #ccc;
+    transition: transform 0.2s ease;
+  }
+  
+  .add-img-upload img:hover {
+    transform: scale(1.05);
+  }
+  
+  .add-product-name,
+  .add-product-description {
+    width: max(40%, 280px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .add-product-name input,
+  .add-product-description textarea {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.2s ease;
+  }
+  
+  .add-product-name input:focus,
+  .add-product-description textarea:focus,
+  .add-category-price select:focus,
+  .add-category-price input:focus {
+    border-color: #999;
+    outline: none;
+  }
+  
+  .add-category-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .add-category,
+  .add-price {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .add-category-price select,
+  .add-category-price input {
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .add-btn {
+    width: fit-content;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #333;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* موبايل
+  @media (max-width: 600px) {
+    .add {
+      padding: 1.5rem;
+    }
+  
+    .add-category-price {
+      flex-direction: column;
+    }
+  
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  */
