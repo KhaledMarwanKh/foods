@@ -39,6 +39,8 @@
 
 import express from "express";
 import cors from "cors";
+import serverless from "serverless-http";
+
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
 import userRouter from "./routes/userRoute.js";
@@ -85,5 +87,7 @@ app.get("/", (req, res) => {
     res.send("API working");
 });
 
-// تصدير التطبيق
-export default app; // تأكد من تصدير التطبيق
+
+export const handler = serverless(app);
+
+export default app; 
