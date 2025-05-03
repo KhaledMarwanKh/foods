@@ -94,6 +94,8 @@
 // });
 
 import app from './app.js'; 
+import serverless from "serverless-http";
+
 const port = 4000; 
 
 // app.listen(port, () => {
